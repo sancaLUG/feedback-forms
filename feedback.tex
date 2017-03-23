@@ -14,7 +14,8 @@
 \usepackage{microtype}
 \usepackage{fontawesome}	% usado para o TUX
 %\usepackage{showframe}		% usado para mostrar as margens
-\usepackage{hyperref}		% usado para links
+\usepackage{graphicx}
+\usepackage{hyperref}		% usado para linksi
 \usepackage{wasysym}		% provides \ocircle and \Box
 \usepackage{enumitem}		% easy control of topsep and leftmargin for lists
 %\usepackage{color}			% used for background color
@@ -121,28 +122,29 @@
 \textbf{\huge \emph{Feedback Installfest} sancaLUG\faLinux}
 \end{center}\vskip1em
 
-\noindent O grupo \textbf{sancaLUG} (São Carlos e região Linux
-User Group) gostaria de agradecer por participar deste evento.
+\noindent O grupo \textbf{sancaLUG} (São Carlos Area Linux
+User Group) agradece por você participar deste evento.
 Esperamos que hoje você tenha conhecido um pouco do que o grupo
 está disposto a fazer pela comunidade.
 
-Com essa pesquisa pretendemos melhorar os nosssos serviços prestados
-voluntariamente à comunidade.
+Com essa pesquisa pretendemos melhorar os nosssos serviços prestados,
+voluntariamente, à comunidade.
 
 \section*{Questionário}
 
+% 1
 \Qitem{ \Qq{Como ficou sabendo sobre o evento?}
 	\begin{Qlist}
 		\item Por Amigos
 		\item Por banners ou fliers
-		\item Diretamente por organizadores
-		\item Pelas páginas do sancaLUG
-		\item Pelas páginas da USP
+		\item Diretamente pelos organizadores
+		\item Pelo evento no facebook
 		\vskip .3em
 		Outro: \Qline{14cm}
 	\end{Qlist}
 }
 
+% 2
 \Qitem{ \Qq{Você já tinha ouvido falar no grupo \textbf{sancaLUG}, de onde?}
 	\begin{Qlist}
 		\item Não
@@ -154,6 +156,7 @@ voluntariamente à comunidade.
 	\end{Qlist}
 }
 
+% 3
 \Qitem{ \Qq{Atualmente você utiliza Linux na sua casa ou trabalho?}
 	\begin{Qlist}
 		\item Sim. Qual: \Qline{5cm}
@@ -161,15 +164,29 @@ voluntariamente à comunidade.
 	\end{Qlist}
 }
 
+% 4
 \Qitem{ \Qq{O que o fez participar dessa \emph{installfest}?}
 	\begin{Qlist}
 		\item Instalar uma distro em sua máquina
 		\item Conhecer as distros Linux
+		\item Exigência de um professor ou de uma matéria
 		\item Conhecer o evento, o grupo ou as pessoas participantes
 		\item Ajudar nas instalações
 	\end{Qlist}
 }
 
+\vskip 1.5cm
+
+\dotfill
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\textwidth]{logo}
+	\label{fig:logo}
+\end{figure}
+
+\newpage
+
+% 5
 \Qitem{ \Qq{O que achou do evento?}
 	\begin{Qlist}
 		\item Ótimo
@@ -177,31 +194,40 @@ voluntariamente à comunidade.
 		\item Regular
 		\item Ruim
 	\end{Qlist}
+	\vskip .3em
+	\Qq{O que poderíamos fazer para melhorar nos próximos eventos?}
+		\Qlines{3}
 }
 
-\Qitem{ \Qq{Deixe sua sugestão e seu \emph{e-mail} para contato!}
+% 6
+\Qitem{ \Qq{Você iria em mais algum evento do sancaLUG?}
+	\begin{Qlist}
+		\item Sim
+		\item Não
+		\item Depende da abordagem do evento
+	\end{Qlist}
+}
+
+% 7
+\Qitem{ \Qq{Quais tipos de eventos você gostaria que o sancaLUG fizesse?}
+	\begin{Qlist}
+		\item Mais \emph{installfests}
+		\item Cursos sobre Linux
+		\item Curso de algum programa em específico. Liste quais
+			programas você tem interesse:
 		\Qlines{2}
+	\end{Qlist}
 }
 
+\vskip 8.2cm
 \dotfill
 
 Novamente agradecemos a sua presença. Esperamos que tenha aproveitado
-a \emph{Installfest} promovida pelo \textbf{sancaLUG} e participe dos
-nossos próximos eventos. Você pode ficar por dentro das novidades pela
-nossa página do facebook (\url{fb.com/sancaLUG}) ou pela wiki
-(\url{sancaLUG.org}).
+a \emph{installfest} promovida pelo \textbf{sancaLUG}.
 
-%%%
-%TODO:
-%	não esquecer de tirar o showframe
-%	formular mais algumas questões para o formulário não ficar
-%		tão vazio
-%	colocar o pontilhado no lugar certo (para isso tem que ser
-%		formulada a parte final destacável)
-%	parte destacável, que contém:
-%		agradecimento
-%		conatos
-%		logo do sancaLUG
-%%%
+Participe dos nossos próximos eventos, você já está convidado! Você
+pode ficar por dentro das novidades pela nossa página do facebook
+\footnote{\url{fb.com/sancaLUG}} ou pela wiki
+\footnote{\url{sancaLUG.org}}.
 
 \end{document}
