@@ -13,17 +13,19 @@
 \usepackage{polyglossia}
 	\setdefaultlanguage{brazil}
 \usepackage{microtype}
-\usepackage{fontawesome}	% usado para o TUX
-%\usepackage{showframe}		% usado para mostrar as margens
+\usepackage{fontawesome}	  % usado para o TUX
+%\usepackage{showframe}		  % usado para mostrar as margens
 \usepackage{graphicx}
-\usepackage{hyperref}		% usado para linksi
-\usepackage{wasysym}		% provides \ocircle and \Box
-\usepackage{enumitem}		% easy control of topsep and leftmargin for lists
-%\usepackage{color}			% used for background color
-\usepackage{forloop}		% used for \Qrating and \Qlines
-\usepackage{ifthen}		% used for \Qitem and \QItem
+\usepackage[hidelinks]{hyperref}  % usado para linksi
+\usepackage{wasysym}		  % provides \ocircle and \Box
+\usepackage{enumitem}		  % easy control of topsep and leftmargin for lists
+%\usepackage{color}		  % used for background color
+\usepackage{forloop}		  % used for \Qrating and \Qlines
+\usepackage{ifthen}		  % used for \Qitem and \QItem
 \usepackage{typearea}
-\areaset{17cm}{26cm}
+\usepackage{tikz}
+\usepackage{multicol}
+\areaset{18cm}{26cm}
 \setlength{\topmargin}{-1cm}
 \usepackage{scrpage2}
 \pagestyle{scrheadings}
@@ -118,123 +120,116 @@
 
 \begin{document}
 \pagestyle{empty}
+\frenchspacing
 
 \begin{center}
-\textbf{\huge \emph{Feedback Installfest} sancaLUG\faLinux}
+  \textbf{\huge Feedback do evento — sancaLUG\faLinux}
 \end{center}\vskip1em
 
-\noindent O grupo \textbf{sancaLUG} (São Carlos \emph{Area Linux
-User Group}) agradece por você participar deste evento.
-Esperamos que hoje você tenha conhecido um pouco do que o grupo
-está disposto a fazer pela comunidade.
-
-Com essa pesquisa pretendemos melhorar os nossos serviços prestados
+\noindent O sancaLUG (\url{sancalug.org}) agradece pela participação. Esperamos
+que você tenha tinha a oportunidade de conhecer um pouco da proposta do nosso
+grupo. Com esta pesquisa, pretendemos melhorar os nossos serviços prestados
 voluntariamente à comunidade.
 
 \section*{Questionário}
 
 % 1
-\Qitem{ \Qq{Como ficou sabendo do evento?}
-	\begin{Qlist}
-		\item Por amigos
-		\item Por \emph{banners} ou \emph{fliers}
-		\item Diretamente pelos organizadores
-		\item Pelo evento no facebook
-		\vskip .3em
-		Outro: \Qline{14cm}
-	\end{Qlist}
+\Qitem{ \Qq{Como você ficou sabendo do evento?}
+  \begin{multicols}{2}
+    \begin{Qlist}
+    \item Por amigos
+    \item Por \emph{banners} ou \emph{flyers}
+    \item Diretamente pelos organizadores
+    \item Pelo evento no Facebook
+      \vskip .3em
+      Outro: \Qlines{3}
+    \end{Qlist}
+  \end{multicols}
 }
 
 % 2
-\Qitem{ \Qq{Você já tinha ouvido falar no grupo \textbf{sancaLUG}, de onde?}
-	\begin{Qlist}
-		\item Não
-		\item Sim, por algum outro evento organizado por eles
-		\item Sim, por um amigo
-		\item Sim, pelas páginas do sancaLUG
-		\vskip .3em
-		Outro: \Qline{14cm}
-	\end{Qlist}
+\Qitem{ \Qq{Como você conheceu o sancaLUG?}
+  \begin{multicols}{2}
+    \begin{Qlist}
+    \item Por outro evento organizado pelo grupo
+    \item Por um amigo
+    \item Pelas páginas do grupo (Facebook ou página principal)
+    \item Acabei de conhecer!
+      \vskip .3em
+      Outro: \Qlines{3}
+    \end{Qlist}
+  \end{multicols}
 }
 
 % 3
-\Qitem{ \Qq{Atualmente você utiliza Linux na sua casa ou trabalho?}
-	\begin{Qlist}
-		\item Sim. Qual: \Qline{5cm}
-		\item Não
-	\end{Qlist}
+\Qitem{ \Qq{Você já usa alguma distribuição de Linux em casa ou no trabalho?}
+  \begin{Qlist}
+  \item Sim. Qual? \Qlines{3}
+  \item Ainda não
+  \item \emph{(No caso de uma installfest)} Acabo de instalar o sistema
+  \end{Qlist}
 }
+
+\vfill
+\noindent\makebox[\linewidth]{\tikz \draw [dashed] (0,0) -- (\pagewidth,0);}
+\begin{minipage}[b][4.5cm][c]{\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{logo}
+\end{minipage}
+\cleardoublepage
 
 % 4
-\Qitem{ \Qq{O que o fez participar dessa \emph{installfest}?}
-	\begin{Qlist}
-		\item Instalar uma distro em sua máquina
-		\item Conhecer as distros Linux
-		\item Exigência de um professor ou de uma matéria
-		\item Conhecer o evento, o grupo ou as pessoas participantes
-		\item Ajudar nas instalações
-	\end{Qlist}
+\Qitem{ \Qq{O que te fez participar do evento de hoje?}
+  \begin{Qlist}
+  \item Conhecer o Linux
+  \item Instalar Linux em sua máquina
+  \item Aprender mais sobre Linux e software livre
+  \item Exigência de um professor ou uma matéria
+  \item Conhecer o evento, o grupo e comunidade
+  \item Ajudar com a organização/instalações/realização do evento
+    \vskip .3em
+    Outro: \Qlines{3}
+  \end{Qlist}
 }
 
-\vskip 1.82cm
-
-\dotfill
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=\textwidth]{logo}
-	\label{fig:logo}
-\end{figure}
-
-\newpage
-
 % 5
-\Qitem{ \Qq{O que achou do evento?}
-	\begin{Qlist}
-		\item Ótimo
-		\item Bom
-		\item Regular
-		\item Ruim
-	\end{Qlist}
-	\vskip .3em
-	\Qq{O que poderíamos fazer para melhorar nos próximos eventos?}
-		\Qlines{3}
+\Qitem{ \Qq{Quais foram as melhores partes do nosso evento? O que te faria
+  voltar para os próximos?}
+    \Qlines{4}
 }
 
 % 6
-\Qitem{ \Qq{Você iria em mais algum evento do sancaLUG?}
-	\begin{Qlist}
-		\item Sim
-		\item Não
-		\item Depende da abordagem do evento
-	\end{Qlist}
+\Qitem{ \Qq{Você tem alguma sugestão para melhorarmos nossos eventos?}
+    \Qlines{4}
 }
 
 % 7
 \Qitem{ \Qq{Quais tipos de eventos você gostaria que o sancaLUG fizesse?}
-	\begin{Qlist}
-		\item Mais \emph{installfests}
-		\item Curso sobre Linux
-		\item Curso de algum programa específico. Liste quais
-			programas você tem interesse:
-		\Qlines{2}
-	\end{Qlist}
+  \begin{Qlist}
+  \item Mais \emph{installfests}
+  \item Curso sobre Linux
+  \item Curso de algum programa específico. Liste quais
+    programas você tem interesse:
+    \Qlines{2}
+  \end{Qlist}
 }
 
-\vskip 8.2cm
-\dotfill
+\vfill
+\noindent\makebox[\linewidth]{\tikz \draw [dashed] (0,0) -- (\pagewidth,0);}
+\begin{minipage}[b][4.5cm][c]{\textwidth}
+  \textbf{{\huge Sobre o sancaLUG}}
+  \vspace{1em}
 
-Novamente agradecemos a sua presença. Esperamos que tenha aproveitado
-a \emph{installfest} promovida pelo \textbf{sancaLUG}.
+  Mais que conferências técnicas, os eventos, encontros e installfests do
+  sancaLUG são oportunidades de conhecer a comunidade de software livre de São
+  Carlos e região. Promovemos não só a liberdade na computação, mas a cultura
+  livre em geral. Aproveite essa oportunidade de conhecer mais gente como você!
+  \vspace{.5em}
 
-Participe dos nossos próximos eventos, você já está convidado! Você
-pode ficar por dentro das novidades pela nossa página do facebook
-\footnote{\url{fb.com/sancaLUG}} ou pela wiki
-\footnote{\url{sancaLUG.org}}.
-
-%				TODO
-%	colocar o telegram também (por que não o QR code)
-%	tentar automatizar a parte destacável
-%	colocar a scissors no pontilhado
-%
+  Entre em contato:\qquad
+  \faGlobe\ \url{sancalug.org} ·
+  \faComments\ \url{t.me/sancaLUG} ·
+  \faFacebook\ \url{fb.com/sancaLUG}
+\end{minipage}
 
 \end{document}
